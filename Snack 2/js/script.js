@@ -34,14 +34,14 @@ function generaNumeroCasuale (){
     return numero = Math.floor(Math.random()*100);
 }
 
+//variabili
 var squadreFalli =[]
+
 // Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti 
 // Infine creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 for(indice in squadre){
-
     squadre[indice].punti = generaNumeroCasuale()
     squadre[indice].falli = generaNumeroCasuale()
     squadreFalli.push(squadre[indice].nome, squadre[indice].falli)
-
 }
 console.log(squadreFalli);
